@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,input,button{
+            border: 1px solid blue;
+            box-sizing: border-box;
+            float: left;
+        }
+        #content{
+            width: 1000px;
+            height: 500px;
+        }
+        #content>div{ float: left; height: 100%;}
+        #content_1{width: 15%;}
+        #content_2{width: 60%;}
+        #content_3{width: 25%;}
+
+        #content_2>div{
+            width: 100%;
+            height: 50%;
+            }
+
+        #content_2>div>div{
+            width: 100%;
+            height: 50%;
+            float: left;
+            }
+
+            
+
+        #content_3>div{width:100%}
+        #content_3_1{width: 20%;}
+        #content_3_2{width: 50%;}
+        #content_3_3{width: 30%;}
+
+        #login_input_id_pwd{width: 65%;}
+        #login_input_button{width: 35%; height: 100%; }
+
+        #login_input_id_pwd>input{width: 100%; height: 50%;}
+        #login_input_button>input{width: 70%; height: 100%;}
+
+        #login_input_etc a{
+            margin: 20px;
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+        }
+        #content_3 img{box-sizing: border-box;}
+
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="content_1">
+            <img src="image/left_img.jpg" alt="">
+        </div>
+        <div id="content_2">
+            <div id="content_2_1">
+                <div id="main_1"><img src="image/main_img1.jpg" alt=""></div> 나무를 심는 사람들
+                <div id="main_2"><img src="image/main_img2.jpg" alt=""></div> 아이들에게 녹색미래를..
+            </div>
+            <div id="content_2_2">
+                <div id="main_3"><img src="image/main_img3.jpg" alt=""></div> 설악산을 살리는 길
+                <div id="main_4"><img src="image/main_img4.jpg" alt=""></div> 사라지는 북극곰들
+            </div>
+           
+        </div>
+        <div id="content_3">
+            <div id="content_3_1">
+                <div id="login_input_id_pwd">
+                    <input type="text" name="userId" placeholder="ID를 입력하세요." required>
+                    <input type="password" name="userPwd" placeholder="PW를 입력하세요." required>
+                </div>
+                <div id="login_input_button">
+                    <input type="button" value="로그인">
+                </div>
+                <div id="login_input_etc" align="center">
+                    <a href="">회원가입</a>
+                    <a href="">ID/PW찾기</a>
+                </div>
+
+                <div id="content_3_2">
+                    <img src="image/right_img.jpg" width=400px height="270px" alt="">
+                </div>
+                <div id="content_3_3">
+                    <img src="image/me_chat.jpg" width=400x height="150px" alt="">
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    
+</body>
+</html>

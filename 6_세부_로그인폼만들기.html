@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인폼 만들기</title>
+    <style>
+        div,form,input{
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+
+        #login_form{
+            width: 300px;
+            height: 120px;
+        }
+        #login_form>*{width: 100%;}
+        #login_form_input{height: 80%;}
+        #login_form_etc{height: 20%;}
+    
+        #login_form_etc>a{
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+            font-size: 12px;
+        }
+
+        #login_form_input>*{
+            height: 100%;
+            float: left;
+        }
+    
+        #login_input_id_pwd{width: 65%;}
+        #login_input_btn{width: 35%;}
+    
+        #login_input_id_pwd>input{
+            width: 100%;
+            height: 50%;
+        }
+        #login_input_btn>input{
+            width: 100%;
+            height: 100%;
+        }
+        
+    
+    </style>
+</head>
+<body>
+
+    <!-- 1. 전체 내용을 감싸는 div -->
+    <div id="login_form">
+
+        <!-- 2_1. 입력을 받는 input요소들이 위치할 영역 -->
+        <form action="" id="login_form_input">
+            <!-- 3_1. ID/PWD input요소가 들어갈 div -->
+            <div id="login_input_id_pwd">
+                <!-- 아이디 input -->
+                <input type="text" name="userId" placeholder="아이디 입력하시오" required>
+                <!-- 비밀번호 input -->
+                <input type="password" name="userPwd" placeholder="비밀번호 입력하시오" required>
+            </div>
+
+            <!-- 3_2. 로그인 버튼이 들어갈 div -->
+            <div id="login_input_btn">
+                <input type="button" value="로그인">
+            </div>
+
+        </form>
+
+        <!-- 2_2. 회원가입, ID/PWD찾기 페이지 a태그들이 위치할 영역 -->
+        <div id="login_form_etc" align="center">
+            <a href="">회원가입</a>
+            <a href="">ID찾기</a>
+            <a href="">PWD찾기</a>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
